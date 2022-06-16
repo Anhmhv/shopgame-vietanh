@@ -1,0 +1,238 @@
+/* reset padding va margin cua tat ca element */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/img/backrou.jpg);
+    background-attachment: fixed;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    font-size: 17px;
+
+}
+
+.menu .menu-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu-ul .nav__item {
+    margin: auto 20px;
+}
+
+.nav__item a:hover {
+    color: aqua;
+}
+
+.menu-ul {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+}
+
+.menu-button {
+    margin-top: 40px;
+
+} 
+
+ .button {
+    margin: 20px;
+    width: 20px;
+} 
+
+.button:hover {
+    color: aqua;
+}
+
+main{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(9, 9, 74);
+}
+main h2{
+    padding-top: 20px;
+    margin: 20px;
+    color: white;
+}
+main .hr2{
+    width: 150px;
+    margin: auto;
+    height: 4px;
+    border-radius: 50px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+main .show{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    color: white;
+}
+.show p{
+    width: 20%;
+}
+.show span{
+    color: gold;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.container .icon i{
+    font-size: 70px;
+    color: rgb(56, 104, 4);
+}
+.fa{
+    color: gold;
+}
+.content{
+    margin-top: 20px;
+    color: gold;
+}
+
+.content .btn button{
+    width: 80px;
+    height: 30px;
+    border: 1px solid;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.show_img{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+.show_img img{
+    width: 1199px;
+}
+.xemthem{
+    width: 200px;
+    height: 30px;
+    border: 1px solid;
+    margin: 20px auto;
+    border-radius: 80px;
+    text-align: center;
+   font-size: 20px;
+   background-color: white;
+}
+.xemthem:hover{
+    background-color: aqua;
+    width: 210px;
+    height: 32px;
+    transition: 0.3s;
+}
+.xemthem > a{
+    margin-top: 20px;
+    color: black;
+}
+
+.btn button:hover{
+    width: 85px;
+    height: 32px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+.btn-toggle-menu {
+    cursor: pointer;
+    display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+footer {
+    height: 130px;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+.footer-left{
+    width: 50%;
+    margin-left: 50px;
+}
+.footer-right{
+    width: 50%;
+    margin-left: 50px;
+}
+
+i {
+    color: wheat;
+}
+
+@media screen and (min-width: 46.1875em) and (max-width:63.9375em) {
+    .menu {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 46.25em) {
+  
+    .menu-ul{
+        display: none;
+    }
+    .menu-button{
+        display: none;
+    }
+    .btn-toggle-menu{
+        display: unset;
+    }
+    .nav__item a{
+        font-size: 10px;
+    }
+    #toggle-menu:checked+.menu-ul{
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 739px) {
+    .banner{
+        width: 100%;
+    }
+    .banner img{
+        width: 100%;
+        height: 200px;
+    }
+    .logo{
+        width: 80px;
+    }
+    .logo img{
+        height: 50px;
+        width: 100%;
+    }
+    
+}

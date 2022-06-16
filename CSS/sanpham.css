@@ -1,0 +1,335 @@
+/* reset padding va margin cua tat ca element */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/img/backrou.jpg);
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    font-size: 17px;
+
+}
+
+.menu .menu-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu-ul .nav__item {
+    margin: auto 20px;
+}
+
+.nav__item a:hover {
+    color: aqua;
+}
+
+.menu-ul {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+}
+
+.menu-button {
+    margin-top: 40px;
+
+} 
+
+ .button {
+    margin: 20px;
+    width: 20px;
+} 
+
+.button:hover {
+    color: aqua;
+}
+
+form{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    color:black;
+    font-weight: bold;
+}
+.chon-sp{
+    max-width: 295px;
+    height: auto;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+.chon-sp label{
+    margin: 5px;
+}
+.chon-sp input{
+    width: 148px;
+    height: 26px;
+}
+.chon-sp select{
+    width: 148px;
+    height: 26px;
+}
+.banner img {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+main{
+    width: 100%;
+
+}
+main .next{
+    width: 250px;
+    font-size: 20px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid;
+    margin: auto;
+    border-radius: 20px;
+    background-color: white;
+}
+.next:hover{
+    background-color: aqua;
+    transition: 0.3s;
+}
+.next > div{
+    padding-top: 5px;
+    
+}
+.next a{
+    padding-top: 10px ;
+    color: black;
+}
+.container-event{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.event{
+    text-align: center;
+    background-color: aliceblue;
+    height: 50px;
+    padding-top: 10px;
+}
+.content-event{
+        width: 290px;
+        height: 330px;
+        border: 1px solid;
+        text-align: center;
+        background-color: rgb(48, 45, 45);
+        color: aliceblue;
+        margin-top: 20px;
+        border-radius: 10px;
+}
+.content-event:hover{
+    width: 295px;
+    height: 335px;
+    box-shadow: 1px 2px blue;
+    transition: 0.5s;
+}
+.content-event .font-event{
+    padding: 10px;
+    color: gold;
+}
+.content-event img{
+    width: 100%;
+    position: relative;
+}
+
+.container-event .demo-sp{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 10px;
+}
+.demo-sp p{
+    width: 50%;
+    margin-top: 5px;
+}
+.demo-sp span{
+    color: red;
+}
+.demo-end{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+.demo-end .gia{
+    width: 50%; 
+}
+.gia p{
+    width: 100px;
+    height: 30px;
+    border: 1px solid red;
+    padding-top: 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.demo-end .chitiet{
+   width: 50%;
+}
+.chitiet button{
+    cursor: pointer;
+    width: 130px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgb(48, 45, 45);
+    color: white;
+}
+.chitiet button:hover{
+    width: 135px;
+    height: 40px;
+    background-color: black;
+    color: gold;
+    transition: 0.4s;
+   
+}
+.content {
+    width: 290px;
+    height: 450px;
+    border: 1px solid;
+    text-align: center;
+    background-color: rgb(48, 45, 45);
+    color: aliceblue;
+    margin-top: 20px;
+}
+
+.content>img {
+    width: 280px;
+    height: 350px;
+}
+
+.content>img:hover {
+    width: 285px;
+    height: 355px;
+    transition: 0.4s;
+}
+
+.content button {
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.content button:hover {
+    width: 110px;
+    height: 35px;
+    transition: 0.3s;
+}
+
+h2 {
+    color: rgb(38, 43, 193);
+    margin: 10px;
+}
+
+.btn-toggle-menu {
+    cursor: pointer;
+    display: none;
+    
+}
+
+#toggle-menu {
+    display: none;
+}
+
+footer {
+
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    width: 100%;
+    padding-top: 10px;
+}
+.footer-left{
+    width: 50%;
+    margin-left: 50px;
+}
+.footer-right{
+    width: 50%;
+    margin-left: 50px;
+}
+
+i {
+    color: wheat;
+}
+
+@media screen and (min-width: 46.1875em) and (max-width:63.9375em) {
+    .menu {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 46.25em) {
+  
+    .menu-ul{
+        display: none;
+    }
+    .menu-button{
+        display: none;
+    }
+    .btn-toggle-menu{
+        
+        display: unset;
+    }
+    .nav__item a{
+        font-size: 10px;
+    }
+    #toggle-menu:checked+.menu-ul{
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 739px) {
+    .banner{
+        width: 100%;
+    }
+    .banner img{
+        width: 100%;
+        height: 200px;
+    }
+    .menu{
+        height: auto;
+    }
+    .logo{
+        width: 80px;
+    }
+    .logo img{
+        height: 50px;
+        width: 100%;
+    }
+    .footer {
+        font-size: 12px;
+        
+    }
+}

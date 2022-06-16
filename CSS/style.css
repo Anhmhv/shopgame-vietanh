@@ -1,0 +1,296 @@
+/* reset padding va margin cua tat ca element */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/img/backrou.jpg);
+    background-attachment: fixed;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    font-size: 17px;
+
+}
+
+.menu .menu-container {
+    display: flex;
+   justify-content:space-between;
+}
+
+.menu-ul .nav__item {
+    margin: auto 20px;
+}
+
+.nav__item a:hover {
+    color: aqua;
+}
+
+.menu-ul {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+}
+
+.menu-button {
+    margin-top: 40px;
+
+}
+
+.button {
+    margin: 20px;
+    width: 20px;
+}
+
+.button:hover {
+    color: aqua;
+}
+
+header {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: 500px;
+
+}
+
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-event {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.event {
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.content-event {
+    width: 290px;
+    height: 350px;
+    border: 1px solid;
+    text-align: center;
+    background-color: rgb(48, 45, 45);
+    color: aliceblue;
+    margin-top: 20px;
+}
+
+.content-event .font-event {
+    padding: 10px;
+    color: gold;
+}
+
+.content-event img {
+    width: 100%;
+    height: 180px;
+}
+
+.content-event .gia {
+    margin: 15px auto;
+    width: 100px;
+    height: 30px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.gia>p {
+    margin-top: 5px;
+}
+
+.content-event button {
+    width: 150px;
+    height: 35px;
+    background-color: black;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.content-event button:hover {
+    width: 160px;
+    height: 40px;
+    transition: 0.4s;
+
+}
+
+.content-event button a:hover {
+    color: aqua;
+    transition: 0.2s;
+}
+
+.content {
+    width: 290px;
+    height: 450px;
+    border: 1px solid;
+    text-align: center;
+    background-color: rgb(48, 45, 45);
+    color: aliceblue;
+    margin-top: 20px;
+}
+
+.content>img {
+    width: 280px;
+    height: 350px;
+}
+
+.content>img:hover {
+    width: 285px;
+    height: 355px;
+    transition: 0.4s;
+}
+
+.content button {
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.content button:hover {
+    width: 110px;
+    height: 35px;
+    transition: 0.3s;
+}
+
+h2 {
+    color: rgb(38, 43, 193);
+    margin: 10px;
+}
+
+.btn-toggle-menu {
+    cursor: pointer;
+    display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+
+.nav-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 230px;
+    max-width: 100%;
+    background-color: #fff;
+}
+
+.menu-mobile {
+    margin-left: 20px;
+}
+
+.menu-mobile .nav-item {
+  margin-top: 20px;
+}
+.nav-mobile-close  .fa{
+ font-size: 30px;
+ display: flex;
+ justify-content: flex-end;
+ margin-right: 9px;
+}
+footer {
+    height: 130px;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.footer-left {
+    width: 50%;
+    margin-left: 50px;
+}
+
+.footer-right {
+    width: 50%;
+    margin-left: 50px;
+}
+
+i {
+    color: wheat;
+}
+
+@media screen and (min-width: 46.1875em) and (max-width:63.9375em) {
+    .menu {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 46.25em) {
+  
+    .menu-ul{
+        display: none;
+    }
+    .menu-button{
+        display: none;
+    }
+    .menu-container{
+        height: 100px;;
+    }
+    .btn-toggle-menu{
+        
+        display: unset;
+    }
+    .nav__item a{
+        font-size: 10px;
+    }
+    #toggle-menu:checked+.menu-ul{
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 739px) {
+    .banner{
+        width: 100%;
+    }
+    .banner img{
+        width: 100%;
+        height: 200px;
+    }
+    .menu{
+        height: auto;
+    }
+    .logo{
+        width: 80px;
+    }
+    .logo img{
+        height: 50px;
+        width: 100%;
+    }
+    .footer {
+        font-size: 12px;
+        
+    }
+}
